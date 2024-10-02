@@ -3,6 +3,10 @@ const headerContent = document.querySelector('.header-content')
 const closeIcon = document.querySelector('.close-icon')
 const nav = document.querySelector('nav')
 
+document.querySelector('.go-to-top').addEventListener('click', function() {
+  window.scrollTo(0, 0);
+});
+
 hamburgerIcon.addEventListener('click', (e) => {
     e.stopPropagation()
     headerContent.classList.add('menu-open')
